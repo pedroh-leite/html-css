@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de iframe</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        iframe#tela{
+            height: 400px;
+            width: 95vw;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Faça uma escolha
+    </h1>
+
+    <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit provident placeat sequi iusto tenetur nemo doloremque sapiente, reprehenderit, vitae, quas vero. Eveniet corporis architecto quo expedita magni quis vel impedit?
+    </p>
+
+    <ul>
+        <li><a href="pagina-extras/pag001.html" target="frame">Primeira página</a></li>
+        <li><a href="pagina-extras/pag002.html" target="frame">Segunda página</a></li> 
+        <li><a href="pagina-extras/pag003.html" target="frame">Terceira página</a></li>
+    </ul>
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita reprehenderit aliquid molestias soluta ratione harum cum quisquam facilis alias, velit exercitationem doloremque provident magni quam sapiente. Rerum labore dolorem temporibus.
+    </p>
+
+    <iframe srcdoc="<h1>Escolha uma das opções acima</h1> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat asperiores at laborum ipsam nemo facilis dicta nobis! Atque aut laboriosam nemo beatae. Reiciendis dignissimos at nihil consequuntur doloribus explicabo veritatis.</p>" id="tela" name="frame">
+        <p>
+            Infelizmente seu navegador não é compatível com isso
+        </p>
+    </iframe>
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis reprehenderit aut porro vel eum hic enim quia sed? Perferendis incidunt nemo laudantium molestiae corrupti saepe? Ea non perferendis autem laborum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque laborum quas exercitationem nulla molestias eveniet dolores odio natus necessitatibus inventore. Non reiciendis dolorem omnis ab quos et vero beatae facilis!
+    </p>
+</body>
+</html>
