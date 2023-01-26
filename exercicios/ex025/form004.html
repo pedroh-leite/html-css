@@ -8,24 +8,24 @@
 </head>
 <body>
     <h1>
-        Teste de formulário
+        Exemplo de formulário
     </h1>
     <form action="cadastro.php" method="get" autocomplete="on">
         <p>
             <label for="inome">Nome:</label>
-            <input type="text" name="nome" id="inome" required maxlength="30" placeholder="Nome completo" autocomplete="name">
+            <input type="text" name="nome" id="inome" minlength="5" maxlength="20" required>
         </p>
         <p>
-            <label for="imedia">Média:</label>
-            <input type="number" name="media" id="imedia" min="0" max="10" placeholder="0 a 10" step="0.1">
+            <label for="iemail">
+                E-mail:
+            </label>
+            <input type="email" name="email" id="iemail" required autocomplete="email">
         </p>
         <p>
-            <label for="idia">Data da prova</label>
-            <input type="date" name="dia" id="idia" value="2023-01-26">
-        </p>
-        <p>
-            <label for="ihora">Hora da prova</label>
-            <input type="time" name="hora" id="ihora">
+            <label for="itel">
+                Telefone:
+            </label>
+            <input type="tel" name="tel" id="itel" autocomplete="tel-national" pattern="^\(\d{2}\)\d{4,5}-\d{4}$" required placeholder="(xx)xxxxx-xxxx">
         </p>
         <p>
             <input type="submit" value="Enviar">
